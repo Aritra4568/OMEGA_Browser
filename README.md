@@ -7,7 +7,7 @@ this browser is under devlopment.
 2. Download this pakage
 3. Open terminal in that folder
 4. Type this 
-         ```python
+         ```
             python main.py
             ```
 5. Enjoy this browser
