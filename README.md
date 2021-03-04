@@ -8,6 +8,6 @@ this browser is under devlopment.
 3. Open terminal in that folder
 4. Type this 
          ```python
-   python main.py
-   ```
+            python main.py
+            ```
 5. Enjoy this browser
