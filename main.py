@@ -1,17 +1,25 @@
+# downloading
+import os
+command = "pip install -r requirement.txt && exit"
+os.system("gnome-terminal -e 'bash -c \""+command+";bash\"'")
+
+# imports
 import sys
+import time
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
-from PyQt5.QtWebEngineWidgets import *
+from PyQt5.QtWebEngineWidgets import * 
 from plyer import notification
 from PyQt5.QtGui import QIcon
 
 
+# welcome notification
 if __name__ == '__main__':
  	notification.notify(
  	title = "WELCOME TO OMEGA",
  	message ="This a under devloping browser.\nWe hope you like it.\nThank you for donloading this browser.",
  	app_icon = "/home/aritra/Python Browser/omega.ico",
- 	timeout= 12
+ 	timeout= 13
  	)
 
 class MainWindow(QMainWindow):
@@ -49,9 +57,11 @@ class MainWindow(QMainWindow):
 
         self.browser.urlChanged.connect(self.update_url)
 
+    
     def navigate_home(self):
         self.browser.setUrl(QUrl('http://google.com'))
 
+    
     def navigate_to_url(self):
         url = self.url_bar.text()
         self.browser.setUrl(QUrl(url))
@@ -59,6 +69,7 @@ class MainWindow(QMainWindow):
     def update_url(self, q):
         self.url_bar.setText(q.toString())
     
+    # this is for windows os
     def initUI(self):
         self.setGeometry(300, 300, 300, 220)
         self.setWindowTitle('OMEGA')
