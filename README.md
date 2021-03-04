@@ -10,4 +10,5 @@ this browser is under devlopment.
          ```
             python main.py
             ```
-5. Enjoy this browser
+5. Reapet the 4th point
+6. Enjoy the browser
